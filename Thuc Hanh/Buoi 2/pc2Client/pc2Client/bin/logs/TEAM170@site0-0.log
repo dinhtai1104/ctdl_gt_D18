@@ -1,0 +1,24 @@
+200610 180322.531|CONFIG|AWT-EventQueue-0|setFileHandlers|Now logging to C:\Users\Admin\Desktop\CTDL_GT_TS\Thuc Hanh\Buoi 2\pc2Client\pc2Client\bin\logs directory.
+200610 180322.531|INFO|AWT-EventQueue-0|info|
+200610 180322.531|INFO|AWT-EventQueue-0|info|Version 9.6.0 20190102 (Wednesday, January 2nd 2019 01:20 UTC) Java ver 1.8.0_201 build 5102 Windows 10 10.0 (amd64) 
+200610 180322.531|INFO|AWT-EventQueue-0|info|Login: 170 (aka team170)
+200610 180322.531|INFO|AWT-EventQueue-0|startLog|Working directory is C:\Users\Admin\Desktop\CTDL_GT_TS\Thuc Hanh\Buoi 2\pc2Client\pc2Client\bin
+200610 180322.532|INFO|AWT-EventQueue-0|startLog|Process id is 18792@DESKTOP-S30D2EK
+200610 180322.532|INFO|AWT-EventQueue-0|info|Contacting server at 203.162.10.117:50002 as TEAM170 @ site 0
+200610 180322.532|INFO|AWT-EventQueue-0|info|sendLoginRequest start - sending from TEAM170 @ site 0
+200610 180322.536|INFO|AWT-EventQueue-0|sendToLocalServer|Sending packet to server Packet[LOGIN_REQUEST] #1 TEAM170 @ site 0 -> SERVER0 @ site 0
+200610 180322.537|INFO|Thread-4|run|send(Serializable)
+200610 180322.538|INFO|AWT-EventQueue-0|sendToLocalServer|Sent    packet to server Packet[LOGIN_REQUEST] #1 TEAM170 @ site 0 -> SERVER0 @ site 0
+200610 180322.541|INFO|AWT-EventQueue-0|info|sendLoginRequest end - packet sent.
+200610 180322.680|INFO|Thread-1|receive|public void receive(SealedObject TransportPacket, ConnectionHandlerID connectionHandlerID)
+200610 180322.682|INFO|Thread-5|info| receiveObject(S) start got Packet[LOGIN_FAILED] #508 SERVER0 @ site 1 -> TEAM170 @ site 0
+200610 180322.682|INFO|Thread-5|dumpPacket|Packet LOGIN_FAILED (Seq #508, o#508 ) recieveObject
+200610 180322.682|INFO|Thread-5|dumpPacket|  From: SERVER0 @ site 1, oSERVER0 @ site 1 (CNTT1-CNPM @ 10.170.100.147) (Contest Id: Default-4356663172451421221)
+200610 180322.682|INFO|Thread-5|dumpPacket|    To: TEAM170 @ site 0
+200610 180322.682|INFO|Thread-5|dumpPacket|   key: MESSAGE_STRING is: java.lang.String No such account
+200610 180322.682|INFO|Thread-5|info|handlePacket start Packet[LOGIN_FAILED] #508 SERVER0 @ site 1 -> TEAM170 @ site 0
+200610 180322.682|INFO|Thread-5|dumpPacket|Packet LOGIN_FAILED (Seq #508, o#508 ) handlePacket
+200610 180322.683|INFO|Thread-5|dumpPacket|  From: SERVER0 @ site 1, oSERVER0 @ site 1 (CNTT1-CNPM @ 10.170.100.147) (Contest Id: Default-4356663172451421221)
+200610 180322.683|INFO|Thread-5|dumpPacket|    To: TEAM170 @ site 0
+200610 180322.683|INFO|Thread-5|dumpPacket|   key: MESSAGE_STRING is: java.lang.String No such account
+200610 180323.780|INFO|Thread-5|info| receiveObject(S) end   got Packet[LOGIN_FAILED] #508 SERVER0 @ site 1 -> TEAM170 @ site 0

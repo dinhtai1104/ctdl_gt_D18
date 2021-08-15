@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+#define get(n) ll n; cin>>n
+#define getStr(s) string s;cin>>s;
+#define getStrs(s) string s;getline(cin,s);
+#define set_arr(a,n); ll a[n]; for(int i=0;i<n;i++)cin>>a[i];
+#define set_vect(a,n); vector<ll>a(n); for(int i=0;i<n;i++)cin>>a[i];
+#define sort_arr(a,n) stable_sort(a,a+n)
+#define sort_vect(a) stable_sort(a.begin(),a.end())
+#define btSpeed() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+void solve(){
+	string digits;
+	cin>>digits;
+	if(digits[0]=='0'){
+		cout<<0<<endl;
+		return;
+	}
+	int n=digits.length();
+	int count[n+1];  
+    count[0] = 1; 
+    count[1] = 1;
+    for (int i=2; i<=n; i++) { 
+        count[i] = 0; 
+        if(digits[i-1] > '0') 
+            count[i] = count[i-1]; 
+        if(digits[i-2] == '1' ||  (digits[i-2] == '2' && digits[i-1] < '7')) 
+            count[i] += count[i-2]; 
+    } 
+    cout<<count[n]<<endl;
+}
+int main(){
+	int t=1;
+	cin >> t;
+	while(t--) {
+		solve();
+	}
+
+	return 0;
+}
+
+
+
+
+
